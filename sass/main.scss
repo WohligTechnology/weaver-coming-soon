@@ -142,7 +142,7 @@ a, .btn,[ui-sref] {
 .coming-soon{
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  min-height: 678px;
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
   margin-top: -70px;
@@ -160,3 +160,4 @@ a, .btn,[ui-sref] {
 
 
 @import "fancybox-override";
+@import "mobile";
