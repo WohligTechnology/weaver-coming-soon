@@ -1,0 +1,162 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../bower_components/flexslider/flexslider.css";
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
+@import "../bower_components/fancyBox/source/jquery.fancybox.css";
+@import "../bower_components/swiper/dist/css/swiper.min.css";
+@import "../bower_components/smart-app-banner/smart-app-banner.css";
+/* Bootstrap Variables Goes Here */
+$brand-primary: #0d9dff !default;
+$brand-success: #84ce3c !default;
+$brand-warning: #ffec39 !default;
+$brand-danger:  #fc483f !default;
+$brand-info:    #000072 !default;
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+body {
+  padding-top: 70px;
+}
+img.loading {
+  text-align: center;
+  opacity: 1;
+  width: 32px !important;
+  height: auto;
+}
+img {
+  opacity: 0;
+  @include transition(all 300ms ease);
+}
+img.doneLoading {
+  opacity: 1;
+}
+nav li:hover .dropdown-menu {
+  display: block;
+}
+#map img {
+  opacity: 1;
+}
+a, .btn,[ui-sref] {
+  cursor: pointer;
+  @include transition(all ease 300ms);
+}
+//bootstrap forms
+.input-lg,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn,
+.btn,
+.form-control {
+  border-radius: 0;
+  @include box-shadow(none);
+}
+.form-control:focus {
+  border-color: $brand-primary;
+  outline: 0;
+  @include box-shadow(none);
+}
+//bootstrap forms
+/* Start writing sass here */
+@font-face {
+    font-family: "Hind-Regular";
+    src: url("../fonts/Hind-Regular.ttf");
+}
+@font-face {
+    font-family: "GothamRoundedBook";
+    src: url("../fonts/GothamRoundedBook.ttf");
+}
+@font-face {
+    font-family: "inaimathi";
+    src: url("../fonts/inaimathi.ttf");
+}
+@font-face {
+    font-family: "Hind-Medium";
+    src: url("../fonts/Hind-Medium.ttf");
+}
+@font-face {
+    font-family: "DK-The-Cats-Whiskers";
+    src: url("../fonts/DK-The-Cats-Whiskers.otf");
+}
+@font-face {
+    font-family: "Rubik-Light";
+    src: url("../fonts/Rubik-Light.ttf");
+}
+
+.font-rubik-light {
+    font-family: "Rubik-Light";
+}
+
+.font-hind-regular {
+    font-family: "Hind-Regular";
+}
+
+.font-gothamrounded {
+    font-family: "GothamRoundedBook";
+}
+
+.font-hind-medium {
+    font-family: "Hind-Medium";
+}
+
+.font-inaimathi {
+    font-family: "inaimathi";
+}
+
+.font-dkcat {
+    font-family: "DK-The-Cats-Whiskers";
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.coming-soon{
+  h3{
+    font-family: "DK-The-Cats-Whiskers";
+    font-size: 40px;
+  }
+  span{
+    font-family: "GothamRoundedBook";
+    font-size: 20px;
+    color: #40170b;
+    a{
+        color: #40170b;
+        &:hover{
+          text-decoration: none;
+        }
+        &:focus{
+          text-decoration: none;
+          outline: 0;
+        }
+    }
+  }
+}
+
+.coming-soon{
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  min-height: 678px;
+  background-position: center;
+  background-size: cover;
+  margin-top: -70px;
+}
+.logo-center{
+  height: 170px;
+    width: 270px;
+    margin: 60px auto 0;
+}
+.soon-text{
+  span{
+    display: block;
+  }
+}
+
+
+@import "fancybox-override";
