@@ -1,0 +1,9 @@
+firstapp.run(['$templateCache', function($templateCache) {$templateCache.put("views/footer.html","");
+$templateCache.put("views/footermenu.html","");
+$templateCache.put("views/header.html","");
+$templateCache.put("views/headermenu.html","");
+$templateCache.put("views/menu.html","<ul class=\"nav navbar-nav\"><li ng-repeat=\"menu in navigation\" class={{menu.classis}}><a ui-sref={{menu.anchor}} ng-if=menu.anchor>{{menu.name}}</a> <a href={{menu.link}} ng-if=menu.link>{{menu.name}}</a><ul class=dropdown-menu ng-if=\"menu.subnav!=\'\';\"><li ng-repeat=\"submenu in menu.subnav\"><a ui-serf={{submenu.anchor}} ng-if=submenu.anchor>{{submenu.name}}</a> <a herf={{submenu.link}} ng-if=submenu.link>{{submenu.name}}</a></li></ul></li></ul>");
+$templateCache.put("views/slider.html","<div class=container></div>");
+$templateCache.put("views/template.html","<div ng-include=template.headermenu class=\"template headermenu\"></div><div ng-include=template.header class=\"template header\"></div><div ng-include=template.slider class=\"template slider\"></div><div ng-include=template.content class=\"template content\"></div><div ng-include=template.footermenu class=\"template footermenu\"></div><div ng-include=template.footer class=\"template footer\"></div>");
+$templateCache.put("views/content/content.html","");
+$templateCache.put("views/content/home.html","<div class=coming-soon><div class=container><div class=\"logo-center text-center\"><img src=img/logo.png class=img-responsive alt=logo></div><div class=\"soon-text text-center\"><h3 class=font-regular>Coming Soon in Mulund (West)</h3><span class=font-bold>Call:<a href=\"tel:+91 88282 99299\">+91 88282 99299</a></span> <span class=font-bold>Email:<a href=mailto:info@weaverspreschool.com>info@weaverspreschool.com</a></span></div></div></div>");}]);

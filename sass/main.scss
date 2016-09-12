@@ -65,6 +65,10 @@ a, .btn,[ui-sref] {
     src: url("../fonts/GothamRoundedBook.ttf");
 }
 @font-face {
+    font-family: "GothamRoundedBookBold";
+    src: url("../fonts/gotham-rounded-bold.otf");
+}
+@font-face {
     font-family: "inaimathi";
     src: url("../fonts/inaimathi.ttf");
 }
@@ -74,7 +78,7 @@ a, .btn,[ui-sref] {
 }
 @font-face {
     font-family: "DK-The-Cats-Whiskers";
-    src: url("../fonts/DK-The-Cats-Whiskers.otf");
+    src: url("../fonts/DK-THE-CATS WHISKERS.otf");
 }
 @font-face {
     font-family: "Rubik-Light";
@@ -120,14 +124,16 @@ a, .btn,[ui-sref] {
 .coming-soon{
   h3{
     font-family: "DK-The-Cats-Whiskers";
-    font-size: 40px;
+    font-size: 60px;
   }
   span{
-    font-family: "GothamRoundedBook";
-    font-size: 20px;
+    font-family: "GothamRoundedBookBold";
+    font-size: 22px;
     color: #40170b;
     a{
+      font-family: "GothamRoundedBookBold";
         color: #40170b;
+        font-weight: bold;
         &:hover{
           text-decoration: none;
         }
@@ -148,8 +154,7 @@ a, .btn,[ui-sref] {
   margin-top: -70px;
 }
 .logo-center{
-  height: 170px;
-    width: 270px;
+    width: 320px;
     margin: 60px auto 0;
 }
 .soon-text{
